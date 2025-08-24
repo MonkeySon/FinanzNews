@@ -1,0 +1,11 @@
+[Unit]
+Description=Retrieve FinanzNews 5 Minutes after boot and after every hour
+
+[Timer]
+OnBootSec=5min 
+OnCalendar=*-*-* *:55:00
+RandomizedDelaySec=10min
+
+[Install]
+WantedBy=timers.target
+

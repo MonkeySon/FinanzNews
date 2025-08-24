@@ -1,0 +1,11 @@
+[Unit]
+Description=Retrieve FinanzNews
+
+[Service]
+WorkingDirectory=/path/to/FinanzNews
+ExecStart=/usr/bin/python3 /path/to/FinanzNews/FinanzNews.py
+User=user
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
